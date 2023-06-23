@@ -1,0 +1,158 @@
+/* global */
+
+:root {
+	--light-gray: #f0eef1;
+	--gray: #e7e7e7;
+	--dark-gray: #afafaf;
+	--light-gray: rgb(247, 247, 247);
+	--faint-shadow: 0 5px 5px rgb(207, 207, 207);
+	--grayOut: rgba(102, 102, 102, 0.5);
+	--grayOutMore: rgba(24, 24, 24, 0.5);
+}
+*,
+html {
+	font-size: 18px;
+}
+body {
+	background-color: var(--gray);
+}
+
+/* top banner */
+
+header {
+	background-color: white;
+	box-shadow: var(--faint-shadow);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+#titleSection {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+#titleSection > img {
+	width: 150px;
+}
+#title {
+	color: teal;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/* main content */
+
+#body {
+	display: flex;
+	justify-content: center;
+}
+#map {
+	width: 700px;
+	margin-top: 100px;
+}
+
+span {
+	position: absolute;
+	left: 0;
+	font-size: 15px;
+}
+
+/* cities */
+
+#Szczecin {
+	left: 670px;
+	top: 270px;
+}
+#Gdansk {
+	left: 940px;
+	top: 190px;
+}
+#Olsztyn {
+	left: 1050px;
+	top: 250px;
+}
+#Bialystok {
+	left: 1220px;
+	top: 310px;
+}
+#Gorzow {
+	left: 720px;
+	top: 360px;
+}
+#Poznan {
+	left: 810px;
+	top: 390px;
+}
+#Bydgoszcz {
+	left: 890px;
+	top: 310px;
+}
+#Warszawa {
+	left: 1100px;
+	top: 410px;
+}
+#Lodz {
+	left: 980px;
+	top: 450px;
+}
+#Kielce {
+	left: 1060px;
+	top: 540px;
+}
+#Lublin {
+	left: 1180px;
+	top: 510px;
+}
+#Wroclaw {
+	left: 820px;
+	top: 520px;
+}
+#Opole {
+	left: 880px;
+	top: 570px;
+}
+#Katowice {
+	left: 960px;
+	top: 610px;
+}
+#Krakow {
+	left: 1020px;
+	top: 640px;
+}
+#Rzeszow {
+	left: 1150px;
+	top: 630px;
+}
+
+#body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+#body > span::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+	display: inline-block;
+	background-color: red;
+	border: 1px solid black;
+	border-radius: 100px;
+}
+span {
+	cursor: pointer;
+}
+
+#results {
+	font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+#results img {
+	width: 100px;
+	height: 100px;
+}
